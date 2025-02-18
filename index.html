@@ -1,110 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Моё портфолио. Разработчик веб-сайтов.">
+    <title>Портфолио | Ваше имя</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ваше имя</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Привет, меня зовут [Имя], я веб-разработчик. Я создаю стильные и функциональные сайты, которые помогают бизнесам расти. В своей работе я использую современные технологии и следую последним трендам в разработке.</p>
+        </div>
+    </section>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Мои Проекты</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="project1.jpg" alt="Проект 1">
+                    <h3>Проект 1</h3>
+                    <p>Описание проекта, которое подчеркивает ключевые особенности и технологии, использованные при создании.</p>
+                    <a href="https://link-to-project.com" target="_blank">Посмотреть проект</a>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Проект 2">
+                    <h3>Проект 2</h3>
+                    <p>Описание проекта с фокусом на функциональность и достижения.</p>
+                    <a href="https://link-to-project.com" target="_blank">Посмотреть проект</a>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Проект 3">
+                    <h3>Проект 3</h3>
+                    <p>Описание проекта, подчеркивающее его уникальность и пользу для пользователя.</p>
+                    <a href="https://link-to-project.com" target="_blank">Посмотреть проект</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-header .container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной через форму ниже или отправьте письмо на email@example.com.</p>
+            <form action="mailto:email@example.com" method="post" enctype="text/plain">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
 
-header h1 {
-    font-size: 2rem;
-}
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
 
-nav ul {
-    list-style-type: none;
-}
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ваше имя. Все права защищены.</p>
+        </div>
+    </footer>
 
-section {
-    padding: 50px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.project h3 {
-    margin-top: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
+    <script src="scripts.js"></script>
+</body>
+</html>
